@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ################################################################ HTML Element Styling #################################################################### */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+/* ########################################################## Utility Classes ############################################################################### */
+
+.container {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-grey {
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.bg-dark {
+    background-color: #263238;
+}
+
+/* ################################################################## Header Styling ######################################################################## */
+
+.header {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMG/pexels-suzukii-xingfu-872831.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #f4f4f4;
+}
+
+a {
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############################################################## HTML content Styling ###################################################################### */
+
+.header-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) */
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+/* ################################################################# Showcase Styling ####################################################################### */
+.showcase {
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px 0px #aaa;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .text-box {
+    padding: 3rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border: 2px solid #e63946;
+    border-radius: 2rem;
+}
+
+.btn-secondary:hover {
+    background-color: #ddd;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################################################################# feature section ######################################################################## */
+
+.feature {
+    padding: 10rem 0;
+}
+
+.box-wrapper {
+    box-shadow: 5px 5px 20px 0px #e63946;
+}
+
+.box {
+    width: 33.333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box1,
+.box3 {
+    background-color: #263238;
+    color: #fff
+}
+
+.box2 {
+    background-color: #E31837;
+    color: #fff;
+}
+
+/* #################################################################### footer styling ###################################################################### */
+
+.footer {
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media i {
+    margin: 2rem;
+}
+
+/* ###################################################################### About Styling ##################################################################### */
+
+.about {
+    padding: 5rem 0rem;
+}
+
+.about-heading {
+    border-bottom: 3px solid #e63946;
+    width: 100%;
+}
+
+.about-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right {
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before {
+    content: '\2713';
+    padding-right: 2rem;
+}
+
+/* ################################################################ count styling ########################################################################### */
+
+.count {
+    margin-top: 2rem;
+}
+
+.count-item {
+    float: left;
+    text-align: center;
+}
+
+.count-item span {
+    font-size: 3rem;
+    color: #e63946;
+    font-weight: 500;
+
+}
+
+.count-item1 {
+    width: 25%;
+}
+
+.count-item2 {
+    width: 25%;
+}
+
+.count-item3 {
+    width: 25%;
+}
+
+.count-item4 {
+    width: 25%;
+}
+
+.count::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-item p {
+    font-weight: 500;
+}
+
+/* ############################################################################ Banner Styling ############################################################# */
+
+.banner {
+    margin-top: 2rem;
+    background-color: #e63946;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px 0px #aaa;
+}
+
+.banner-left {
+    float: left;
+    width: 70%;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 1rem;
+
+}
+
+.banner-right {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+.banner-btn {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 0.3rem 1.5rem;
+    color: #f4f4f4;
+    letter-spacing: 0.5rem;
+}
+
+.banner-btn:hover {
+    background-color: #fff;
+    color: #E31837;
+}
+
+.banner::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############################################################## Contact Styling ########################################################################### */
+
+.contact-form {
+    padding: 4rem;
+    background-color: #ddd;
+}
+
+.form-wrapper .company-add {
+    background-color: #fff;
+    float: left;
+    width: 49%;
+    height: 660px;
+    padding: 2rem;
+}
+
+.form-wrapper .company-add i {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.form-wrapper .company-add h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .company-add {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-add img {
+    max-width: 90%;
+    min-height: 35rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############################################################# campany form styling ####################################################################### */
+
+.form-wrapper .company-form {
+    background-color: #fff;
+    float: right;
+    width: 49%;
+    height: 660px;
+    padding: 2rem;
+}
+
+.company-form h1::after {
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+}
+
+.form-wrapper .company-form label {
+    display: block;
+}
+
+.form-wrapper .company-form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .company-form .form-group {
+    margin-bottom: 1.2rem;
+    color: #555;
+}
+
+.form-wrapper .company-form label::after {
+    content: '*';
+    color: #E31837;
+}
+
+.form-wrapper .company-form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.3em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    border: none;
+    color: #f4f4f4;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #aaa;
+    color: #e63946;
+}
+
+/* ############################################################### Media Queries ############################################################################ */
+
+@media (max-width : 500px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px #e63946;
+    }
+
+    .feature .box2,
+    .feature .box3 {
+        margin-top: 40px;
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    .banner-left,
+    .banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-add{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .form-wrapper .company-form {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width : 501px) and (max-width : 800px) {
+    html {
+        font-size: 50%;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px #e63946;
+    }
+
+    .feature .box2,
+    .feature .box3 {
+        margin-top: 40px;
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    .banner-left,
+    .banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-add{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .form-wrapper .company-form {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width : 801px) and (max-width : 1200px){
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (orientation : landscape) and (max-height : 500px) {
+    .header {
+        height: 90vmax;
+    }
+}
